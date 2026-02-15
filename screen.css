@@ -1,4 +1,151 @@
-/* Add screen styles below */
 a.active {
     font-weight: bold;
+}@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+    --icon-dim: 24px;
+    --size-title: 4em;
+    --font-black: 900;
+    --font-reg: 3em; 
+
+    --btn-red: #FF3F3C;    
+    --btn-white: #ffffff;
+    --input-bg: #f4f4f4;
+    --radius: 8px;
+    --form-gap: 16px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 64px;
+  line-height: 180px;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-size:32px;
+}
+
+.list-icon {
+  width: var(--icon-dim);
+  height: var(--icon-dim);
+  flex-shrink: 0;
+  padding-right: 33px;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1{
+    margin: 0; 
+    font-weight: bold;
+}
+
+main {
+    background: url('polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.hero {
+    text-align: center;
+    min-height: 800px;
+}
+
+.hero h2{
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+ul {
+  padding-left: 0;    
+  margin-left: 0;    
+  flex-direction: column;
+  align-items: flex-start; 
+  font-size:32px;
+}
+
+
+p {
+  text-align: justify;
+  font-size:32px;
+  width: 1049px;
+  height: 255px;
+  line-height: 42px;
+}
+
+details {
+  text-align: justify;
+  width: 1049px;
+}
+
+.cta {
+  padding-bottom: 100px;
+}
+
+.cta-background-shape {
+  padding: 30px;
+  margin: 0 auto;      
+  border-radius: 40px;
+  background: linear-gradient(180deg, #E2E2E2 0%, #D6D7D6 100%);  
+  max-width: 1014px;
+}
+
+
+.cta-background-shape form {
+  display: flex;
+  align-items: stretch;     
+  gap: 15px; 
+              
+}
+
+.cta-background-shape input[type="text"] {
+  flex: 1;
+  padding: 16px;
+  background-color: #ECECEC;
+  border: none;
+  font-size: 1.125rem;
+
+}
+
+.cta-background-shape input[type="button"] {
+  padding: 0 25px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: var(--btn-red);
+  color: var(--btn-white);
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-black);
+  width: 254px;
+  height: 96px;
+  font-size: 1.125rem;
+  line-height: 75px; 
+
+}
+
+.cta-background-shape input::placeholder {
+    color: #424242 
+    
 }
